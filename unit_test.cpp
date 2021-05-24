@@ -7,6 +7,7 @@
 #include "add_test.hpp"
 #include "sub_test.hpp"
 #include "pow_test.hpp"
+#include "childTests.hpp"
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);

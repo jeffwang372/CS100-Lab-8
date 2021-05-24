@@ -7,8 +7,8 @@
 #include "op.hpp"
 #include "div.hpp"
 #include "add.hpp"
-#include "mockPow.hpp"
-#include "mockSub.hpp"
+//#include "mockPow.hpp"
+//#include "mockSub.hpp"
 #include "rand.hpp"
 
  TEST(DivTest, DivNonZero) {
@@ -82,7 +82,7 @@
  EXPECT_EQ(test->evaluate(), 2.0);
  EXPECT_EQ(test->stringify(),"(10.000000/(15.000000/3.000000))" );
 }
-
+/*
 TEST(DivTest,DivSub ) {
  Op* op1 = new Op(25.0);
  PositiveMock* sub1 = new PositiveMock;//returns 5.0 from test sub
@@ -91,7 +91,8 @@ TEST(DivTest,DivSub ) {
  EXPECT_EQ(test->evaluate(), 5.0);
  EXPECT_EQ(test->stringify(),"(25.000000/(10.000000-5.000000))" );
 }
-
+*/
+/*
 TEST(DivTest,DivPow ) {
  Op* op1 = new Op(24.0);
 // Op* op2 = new Op(30.0);
@@ -103,7 +104,7 @@ TEST(DivTest,DivPow ) {
  EXPECT_EQ(test->stringify(),"(24.000000/(2.000000**2.000000))" );
 }
 
-
+*/
 TEST(DivTest,DivRand ) {
  Op* op1 = new Op(99.0);
  Rand* rand1 = new Rand();

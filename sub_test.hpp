@@ -5,9 +5,9 @@
 
 #include "op.hpp"
 #include "rand.hpp"
-#include "mockMult.hpp"
-#include "mockDiv.hpp"
-#include "mockAdd.hpp"
+//#include "mockMult.hpp"
+//#include "mockDiv.hpp"
+//#include "mockAdd.hpp"
 #include "sub.hpp"
 #include "pow.hpp"
 
@@ -46,7 +46,7 @@ TEST(SubTest, SubNegative) {
 
  EXPECT_LE(test->evaluate(), 100.0);
  }
-
+/*
  TEST(SubTest, SubMult) {
  Op* op1 = new Op(30);
  IntMultMock* op2 = new IntMultMock();
@@ -73,7 +73,7 @@ TEST(SubTest, SubDiv) {
  EXPECT_EQ(test->evaluate(), 22);
  EXPECT_EQ(test->stringify(), "(30.000000-(5.000000+3.000000))");
  }
-
+*/
  TEST(SubTest, SubPow) {
  Op* op1 = new Op(30);
  Op* opPow1 = new Op(2);

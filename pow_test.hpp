@@ -55,7 +55,7 @@ TEST(PowTest, PowNegative2) {
 
  EXPECT_LE(test->evaluate(), 9801.0);
  }
-
+/*
  TEST(PowTest, PowMult) {
  Op* op1 = new Op(2);
  IntMultMock* op2 = new IntMultMock();
@@ -82,7 +82,7 @@ TEST(PowTest, PowDiv) {
  EXPECT_EQ(test->evaluate(), 64);
  EXPECT_EQ(test->stringify(), "((5.000000+3.000000)**2.000000)");
  }
-
+*/
 TEST(PowTest, PowSub) {
  Op* op1 = new Op(2);
  Op* opSub1 = new Op(4);
