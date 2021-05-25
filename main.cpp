@@ -23,7 +23,6 @@ int main() {
     	Base* add = new Add(three, mult);
     	Base* minus = new Sub(add, two);
 
-
 	Base* one = new Op(1);
 	Base* five = new Op(5);
 	Base* zero = new Op(0);
