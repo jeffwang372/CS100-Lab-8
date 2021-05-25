@@ -1,4 +1,5 @@
 #ifndef __VISITOR_HPP__
+
 #define __VISITOR_HPP__
 
 class Op;
@@ -9,6 +10,16 @@ class Mult;
 class Div;
 class Pow;
 
+
+/*#include "base.hpp"
+#include "op.hpp"
+#include "rand.hpp"
+#include "mult.hpp"
+#include "div.hpp"
+#include "add.hpp"
+#include "sub.hpp"
+#include "pow.hpp"
+*/
 class Visitor{
     public:
         virtual ~Visitor() = default;
